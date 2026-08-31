@@ -12,15 +12,15 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 px-4 py-5 sm:px-6 lg:px-8">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-2xl border border-white/10 bg-slate-950/70 px-5 py-3 shadow-2xl shadow-violet-950/20 backdrop-blur-xl">
+    <header className="fixed inset-x-0 top-0 z-50 px-3 py-4 sm:px-6 lg:px-8">
+      <nav className="mx-auto flex max-w-6xl items-center justify-between rounded-2xl border border-white/10 bg-slate-950/70 px-4 py-3 sm:px-5 shadow-2xl shadow-violet-950/20 backdrop-blur-xl">
 
         {/* Logo */}
         <a
           href="#home"
-          className="group text-xl font-bold tracking-tight"
+          className="group min-w-0 text-lg sm:text-xl font-bold tracking-tight"
         >
-          <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
+          <span className="truncate bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
             Narmada Kumavat
           </span>
         </a>

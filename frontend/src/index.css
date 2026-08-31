@@ -2,6 +2,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -9,4 +10,5 @@ body {
   min-width: 320px;
   background: #050816;
   color: white;
+  overflow-x: hidden;
 }

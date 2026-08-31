@@ -49,7 +49,7 @@ const handleSubmit = async (e) => {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden px-6 py-24 sm:py-28"
+      className="relative overflow-hidden px-4 sm:px-6 py-16 sm:py-24 lg:py-28"
     >
       {/* Background Glows */}
       <div className="pointer-events-none absolute left-0 top-1/3 -z-10 h-72 w-72 rounded-full bg-violet-600/10 blur-[120px]" />
@@ -58,12 +58,12 @@ const handleSubmit = async (e) => {
 
       <div className="mx-auto w-full max-w-6xl">
         {/* Section Heading */}
-        <div className="mb-14 text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
+        <div className="mb-10 sm:mb-14 text-center">
+          <p className="mb-4 text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] sm:tracking-[0.3em] text-cyan-400">
             Contact Me
           </p>
 
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+          <h2 className="text-2xl min-[380px]:text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Let's{" "}
             <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
               Connect
@@ -81,7 +81,7 @@ const handleSubmit = async (e) => {
         {/* Contact Content */}
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Contact Information */}
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm sm:p-8">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-7 md:p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-semibold text-white">
               Get In Touch
             </h3>
@@ -94,7 +94,7 @@ const handleSubmit = async (e) => {
             {/* Email */}
             <a
               href="mailto:narmadakumavat2005@gmail.com"
-              className="group mt-8 flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-4 transition duration-300 hover:border-violet-400/30 hover:bg-white/10"
+              className="group mt-8 flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-3.5 sm:p-4 transition duration-300 hover:border-violet-400/30 hover:bg-white/10 min-w-0"
             >
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-violet-500/10 text-violet-400">
                 <svg
@@ -119,19 +119,19 @@ const handleSubmit = async (e) => {
                 </svg>
               </div>
 
-              <div>
+              <div className="min-w-0 flex-1">
                 <p className="text-xs uppercase tracking-wider text-slate-500">
                   Email
                 </p>
 
-                <p className="mt-1 text-sm font-medium text-slate-200 transition group-hover:text-white sm:text-base">
+                <p className="mt-1 text-xs min-[380px]:text-sm font-medium text-slate-200 transition group-hover:text-white sm:text-base break-all min-[400px]:break-normal">
                   narmadakumavat2005@gmail.com
                 </p>
               </div>
             </a>
 
             {/* Phone */}
-            <div className="mt-4 flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-4">
+            <div className="mt-4 flex items-center gap-4 rounded-xl border border-white/10 bg-white/5 p-3.5 sm:p-4">
               <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-400">
                 <svg
                   className="h-5 w-5"
@@ -188,7 +188,7 @@ const handleSubmit = async (e) => {
           </div>
 
           {/* Contact Form */}
-          <div className="rounded-2xl border border-white/10 bg-white/5 p-7 backdrop-blur-sm sm:p-8">
+          <div className="rounded-2xl border border-white/10 bg-white/5 p-5 sm:p-7 md:p-8 backdrop-blur-sm">
             <h3 className="text-2xl font-semibold text-white">
               Send Me a Message
             </h3>

@@ -2,19 +2,19 @@ function About() {
   return (
     <section
       id="about"
-      className="relative overflow-hidden px-6 py-24 sm:py-28"
+      className="relative overflow-hidden px-4 sm:px-6 py-16 sm:py-24 lg:py-28"
     >
       {/* Background Glow */}
       <div className="pointer-events-none absolute right-0 top-1/2 -z-10 h-72 w-72 -translate-y-1/2 rounded-full bg-cyan-600/10 blur-[120px]" />
 
       <div className="mx-auto w-full max-w-6xl">
         {/* Section Heading */}
-        <div className="mb-14 text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
+        <div className="mb-10 sm:mb-14 text-center">
+          <p className="mb-4 text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] sm:tracking-[0.3em] text-cyan-400">
             About Me
           </p>
 
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+          <h2 className="text-2xl min-[380px]:text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Turning Ideas Into{" "}
             <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
               Web Experiences

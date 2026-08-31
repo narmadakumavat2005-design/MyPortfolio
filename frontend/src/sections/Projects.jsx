@@ -82,7 +82,7 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="relative overflow-hidden px-6 py-24 sm:py-28"
+      className="relative overflow-hidden px-4 sm:px-6 py-16 sm:py-24 lg:py-28"
     >
       {/* Background Glows */}
       <div className="pointer-events-none absolute left-1/4 top-1/3 -z-10 h-72 w-72 rounded-full bg-violet-600/10 blur-[120px]" />
@@ -91,12 +91,12 @@ function Projects() {
 
       <div className="mx-auto w-full max-w-6xl">
         {/* Section Heading */}
-        <div className="mb-14 text-center">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.3em] text-cyan-400">
+        <div className="mb-10 sm:mb-14 text-center">
+          <p className="mb-4 text-xs sm:text-sm font-semibold uppercase tracking-[0.2em] sm:tracking-[0.3em] text-cyan-400">
             My Projects
           </p>
 
-          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
+          <h2 className="text-2xl min-[380px]:text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl">
             Things I've{" "}
             <span className="bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-400 bg-clip-text text-transparent">
               Built
@@ -145,7 +145,7 @@ function Projects() {
               </div>
 
               {/* Project Content */}
-              <div className="flex flex-1 flex-col p-6">
+              <div className="flex flex-1 flex-col p-5 sm:p-6">
                 <h3 className="text-xl font-semibold text-white">
                   {project.title}
                 </h3>
@@ -167,13 +167,13 @@ function Projects() {
                 </div>
 
                 {/* Buttons */}
-                <div className="mt-auto flex gap-3 pt-6">
+                <div className="mt-auto flex gap-2 sm:gap-3 pt-6">
                   {/* GitHub */}
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 rounded-full border border-white/10 bg-white/5 px-4 py-2.5 text-center text-sm font-semibold text-slate-200 transition duration-300 hover:border-violet-400/30 hover:bg-violet-500/10 hover:text-white"
+                    className="flex-1 rounded-full border border-white/10 bg-white/5 px-2.5 sm:px-4 py-2.5 text-center text-xs sm:text-sm font-semibold text-slate-200 transition duration-300 hover:border-violet-400/30 hover:bg-violet-500/10 hover:text-white"
                   >
                     GitHub
                   </a>
@@ -184,12 +184,12 @@ function Projects() {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-1 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500 px-4 py-2.5 text-center text-sm font-semibold text-white shadow-lg shadow-violet-500/10 transition duration-300 hover:scale-105 hover:shadow-violet-500/30"
+                      className="flex-1 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500 px-2.5 sm:px-4 py-2.5 text-center text-xs sm:text-sm font-semibold text-white shadow-lg shadow-violet-500/10 transition duration-300 hover:scale-105 hover:shadow-violet-500/30"
                     >
                       Live Demo
                     </a>
                   ) : (
-                    <span className="flex-1 cursor-not-allowed rounded-full bg-gradient-to-r from-violet-500/40 to-cyan-500/40 px-4 py-2.5 text-center text-sm font-semibold text-slate-300">
+                    <span className="flex-1 cursor-not-allowed rounded-full bg-gradient-to-r from-violet-500/40 to-cyan-500/40 px-2.5 sm:px-4 py-2.5 text-center text-xs sm:text-sm font-semibold text-slate-300">
                       Live Demo
                     </span>
                   )}

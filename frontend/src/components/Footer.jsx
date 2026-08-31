@@ -2,7 +2,7 @@ function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden border-t border-white/10 px-6 py-10">
+    <footer className="relative overflow-hidden border-t border-white/10 px-4 sm:px-6 py-8 sm:py-10">
       {/* Background Glow */}
       <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-40 w-72 -translate-x-1/2 rounded-full bg-violet-600/10 blur-[100px]" />
 
@@ -25,7 +25,7 @@ function Footer() {
           </div>
 
           {/* Navigation */}
-          <div className="flex flex-wrap items-center justify-center gap-5">
+          <div className="flex flex-wrap items-center justify-center gap-3.5 sm:gap-5">
             <a
               href="#home"
               className="text-sm text-slate-400 transition duration-300 hover:text-white"
