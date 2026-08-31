@@ -41,7 +41,7 @@ const handleSubmit = async (e) => {
     form.reset();
   } catch (error) {
     console.error("Contact form error:", error);
-    setStatus("Something went wrong. Please try again.");
+    setStatus(error.message || "Something went wrong. Please try again.");
   } finally {
     setIsSending(false);
   }

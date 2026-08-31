@@ -36,11 +36,11 @@ ${message}
     });
 
     if (error) {
-      console.error("Resend Error:", error);
+      console.error("Resend Error:", error.message || error);
 
       return res.status(500).json({
         success: false,
-        message: "Failed to send email.",
+        message: error.message || "Failed to send email.",
       });
     }
 
@@ -50,11 +50,11 @@ ${message}
       data,
     });
   } catch (error) {
-    console.error("Server Error:", error);
+    console.error("Server Error:", error.message || error);
 
     return res.status(500).json({
       success: false,
-      message: "Something went wrong.",
+      message: error.message || "Something went wrong on the server.",
     });
   }
 };
